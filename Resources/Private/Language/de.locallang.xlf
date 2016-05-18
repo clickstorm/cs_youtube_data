@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-06-30T14:19:21Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="plugin_label" approved="yes">
+			<source>Youtube Data V3</source>
+			<target>Youtube Data V3</target>
+		</trans-unit>
+		<trans-unit id="plugin_value" approved="yes">
+			<source>Here you can edit the Youtube Data V3</source>
+			<target>Hier können Sie die Youtube Daten V3 bearbeiten</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_channel_false" approved="yes">
+			<source>The channel id is false</source>
+			<target>Der Kanal-ID ist falsch</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_channel_false_check" approved="yes">
+			<source>Check your channel id</source>
+			<target>Überprüfen Sie Ihre Kanal-ID</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error" approved="yes">
+			<source>Error</source>
+			<target>Fehler</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error_code" approved="yes">
+			<source>ERROR CODE:</source>
+			<target>FEHLERCODE:</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error_link" approved="yes">
+			<source>more infos</source>
+			<target>mehr Infos</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error_message" approved="yes">
+			<source>ERROR MESSAGE:</source>
+			<target>FEHLERMELDUNG:</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error_reason" approved="yes">
+			<source>REASON:</source>
+			<target>GRUND:</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.channelId" approved="yes">
+			<source>Add &quot;channelID&quot; from Youtube channel</source>
+			<target>Fügen Sie &quot;ChannelId&quot; von Youtube Kanal</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.maxResults" approved="yes">
+			<source>maximum number of items (0-50)</source>
+			<target>maximale Anzahl der Elemente (0-50)</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.order" approved="yes">
+			<source>sort by</source>
+			<target>Sortieren nach</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.order.date" approved="yes">
+			<source>Date</source>
+			<target>Datum</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.order.rating" approved="yes">
+			<source>Rating</source>
+			<target>Wertung</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.order.viewCount" approved="yes">
+			<source>Number of viewed videos</source>
+			<target>Anzahl der angesehene Videos</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_sheet" approved="yes">
+			<source>Settings</source>
+			<target>Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_no_videos" approved="yes">
+			<source>No videos were found. Check the channel ID and the API key.</source>
+			<target>Es wurden keine Videos gefunden. Überprüfen Sie die Kanal-ID und die API-Schlüssel.</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

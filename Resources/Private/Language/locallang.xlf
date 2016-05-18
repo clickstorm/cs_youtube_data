@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-06-30T14:19:21Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="plugin_label">
+			<source>Youtube Data V3</source>
+		</trans-unit>
+		<trans-unit id="plugin_value">
+			<source>Here you can edit the Youtube Data V3</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_channel_false">
+			<source>The channel id is false</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_channel_false_check">
+			<source>Check your channel id</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error">
+			<source>Error</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error_code">
+			<source>ERROR CODE:</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error_link">
+			<source>more infos</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error_message">
+			<source>ERROR MESSAGE:</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_error_reason">
+			<source>REASON:</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.channelId">
+			<source>Add &quot;channelID&quot; from Youtube channel</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.maxResults">
+			<source>maximum number of items (0-50)</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.order">
+			<source>sort by</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.order.date">
+			<source>Date</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.order.rating">
+			<source>Rating</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_settings.order.viewCount">
+			<source>Number of viewed videos</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_flexform_sheet">
+			<source>Settings</source>
+		</trans-unit>
+		<trans-unit id="tx_csyoutubedata_no_videos">
+			<source>No videos were found. Check the channel ID and the API key.</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

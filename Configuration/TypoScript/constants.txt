@@ -1,0 +1,23 @@
+
+plugin.tx_csyoutubedata {
+	view {
+		# cat=plugin.tx_csyoutubedata/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:cs_youtube_data/Resources/Private/Templates/
+		# cat=plugin.tx_csyoutubedata/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:cs_youtube_data/Resources/Private/Partials/
+		# cat=plugin.tx_csyoutubedata/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:cs_youtube_data/Resources/Private/Layouts/
+	}
+    persistence {
+        # cat=plugin.tx_csyoutubedata//a; type=string; label=Default storage PID
+        storagePid =
+    }
+    settings {
+        # cat=plugin.tx_csyoutubedata//a; type=string; label=The part parameter (id, snippet, contentDetails, fileDetails, liveStreamingDetails, localizations, player, processingDetails, recordingDetails, statistics, status, suggestions, and topicDetails)
+        videoUrlPart = id,snippet,contentDetails,statistics,recordingDetails,player
+        # cat=plugin.tx_csyoutubedata//a; type=intenger; label=Width of the video in px
+        videoPlayerWidth = 560
+        # cat=plugin.tx_csyoutubedata//a; type=intenger; label=Height of the video in px
+        videoPlayerHeight = 315
+    }
+}

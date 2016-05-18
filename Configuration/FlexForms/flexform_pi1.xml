@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+        <langChildren>1</langChildren>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:cs_youtube_data/Resources/Private/Language/locallang.xlf:tx_csyoutubedata_flexform_sheet</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.channelId>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:cs_youtube_data/Resources/Private/Language/locallang.xlf:tx_csyoutubedata_flexform_settings.channelId</label>
+                            <config>
+                                <type>input</type>
+                            </config>
+                        </TCEforms>
+                    </settings.channelId>
+                    <settings.order>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:cs_youtube_data/Resources/Private/Language/locallang.xlf:tx_csyoutubedata_flexform_settings.order
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:cs_youtube_data/Resources/Private/Language/locallang.xlf:tx_csyoutubedata_flexform_settings.order.date</numIndex>
+                                        <numIndex index="1">date</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">LLL:EXT:cs_youtube_data/Resources/Private/Language/locallang.xlf:tx_csyoutubedata_flexform_settings.order.viewCount</numIndex>
+                                        <numIndex index="1">viewCount</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2">
+                                        <numIndex index="0">LLL:EXT:cs_youtube_data/Resources/Private/Language/locallang.xlf:tx_csyoutubedata_flexform_settings.order.rating</numIndex>
+                                        <numIndex index="1">rating</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.order>
+                    <settings.maxResults>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>
+                                LLL:EXT:cs_youtube_data/Resources/Private/Language/locallang.xlf:tx_csyoutubedata_flexform_settings.maxResults
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <default>5</default>
+                            </config>
+                        </TCEforms>
+                    </settings.maxResults>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+
+</T3DataStructure>

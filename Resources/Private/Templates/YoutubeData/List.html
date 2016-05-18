@@ -1,0 +1,17 @@
+<f:layout name="Default" />
+
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+<f:section name="Main">
+    <f:flashMessages renderMode="div" />
+    <f:if condition="{videos}">
+        <f:for each="{videos}" as="video" iteration="i">
+            <f:if condition="{i.isFirst}">
+                <h1><f:link.external uri="https://www.youtube.com/channel/{settings.channelId}" target="_blank">{video.snippet.channelTitle}</f:link.external></h1>
+            </f:if>
+            <f:render partial="Video" section="Main" arguments="{video:video,i:i}" />
+        </f:for>
+    </f:if>
+</f:section>
+</div>

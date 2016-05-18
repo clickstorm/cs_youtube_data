@@ -1,0 +1,13 @@
+﻿.. |img-4|      image:: ../Images/extension_settings.png
+   :height: 240
+   :width: 540
+.. :align: left
+.. :border: 1
+.. :name: Grafik1
+
+.. |img-5|      image:: ../Images/plugin_settings.png
+   :height: 443
+   :width: 492
+.. :align: left
+.. :border: 1
+.. :name: Grafik2

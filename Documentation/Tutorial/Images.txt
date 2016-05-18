@@ -1,0 +1,35 @@
+﻿.. |img-api|      image:: ../Images/extension_settings.png
+   :height: 240
+   :width: 540
+.. :align: left
+.. :border: 1
+.. :name: Grafik5
+.. :vspace: 9
+
+.. |img-ts|      image:: ../Images/ts_settings.png
+   :height: 402
+   :width: 726
+.. :align: left
+.. :border: 1
+.. :name: Grafik8
+
+.. |img-plugin|     image:: ../Images/plugin_element.png
+   :height: 182
+   :width: 693
+.. :align: left
+.. :border: 1
+.. :name: Grafik14
+
+.. |img-plugin-settings|     image:: ../Images/plugin_settings.png
+   :height: 443
+   :width: 492
+.. :align: left
+.. :border: 1
+.. :name: Grafik15
+
+.. |img-finish|     image:: ../Images/frontend.png
+   :height: 956
+   :width: 1168
+.. :align: left
+.. :border: 1
+.. :name: Grafik16

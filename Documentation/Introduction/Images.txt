@@ -1,0 +1,7 @@
+﻿.. |screenshot|      image:: ../Images/frontend.png
+   :height: 956
+   :width: 1168
+.. :align: left
+.. :border: 1
+.. :name: Screenshot
+

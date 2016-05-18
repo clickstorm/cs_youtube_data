@@ -1,0 +1,62 @@
+{namespace cs=Clickstorm\CsYoutubeData\ViewHelpers}
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<head>
+    <title>Partials: Video</title>
+</head>
+<body>
+<f:section name="Main">
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>ID</th>
+            <td>{video.id}</td>
+        </tr>
+        <tr>
+            <th>Title Channel</th>
+            <td>{video.snippet.channelTitle}</td>
+        </tr>
+        <tr>
+            <th>Title Video</th>
+            <td>{video.snippet.title}</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>{video.snippet.description}</td>
+        </tr>
+        <tr>
+            <th>Image (Medium - 320x180)</th>
+            <td><img src="{video.snippet.thumbnails.medium.url}" width="{video.snippet.thumbnails.medium.width}" height="{video.snippet.thumbnails.medium.height}" /></td>
+        </tr>
+        <tr>
+            <th>Image other values</th>
+            <td>(Default - 120x90), (Medium - 320x180), (High - 480x360), (Standard - 640x480), (Maxres - 1280x720)  </td>
+        </tr>
+        <tr>
+            <th>
+                Video ({settings.videoPlayerWidth} x {settings.videoPlayerHeight})
+            </th>
+            <td>
+                <iframe src="https://www.youtube.com/embed/{video.id}?rel=0" width="{settings.videoPlayerWidth}" height="{settings.videoPlayerHeight}" frameborder="0" allowfullscreen></iframe>
+            </td>
+        </tr>
+        <tr>
+            <th>Link</th>
+            <td><a href="https://www.youtube.com/watch?v={video.id}" target="_blank" title="Opens video in new frame">Watch on YouTube</a></td>
+        </tr>
+        <tr>
+            <th>Viewer</th>
+            <td>{video.statistics.viewCount}</td>
+        </tr>
+        <tr>
+            <th>Likes</th>
+            <td>{video.statistics.likeCount}</td>
+        </tr>
+        <tr>
+            <th>Duration</th>
+            <td><cs:convertDuration duration="{video.contentDetails.duration}"/> min</td>
+        </tr>
+    </table>
+    <br />
+</f:section>
+</body>
