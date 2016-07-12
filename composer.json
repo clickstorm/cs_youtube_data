@@ -1,0 +1,30 @@
+{
+  "name": "clickstorm/cs_youtube_data",
+  "type": "typo3-cms-extension",
+  "description": "[clickstorm] Youtube Data V3",
+  "homepage": "https://www.clickstorm.de",
+  "license": [
+    "GPL-2.0+"
+  ],
+  "keywords": [
+    "typo3",
+    "clickstorm",
+    "YouTube"
+  ],
+  "version": "1.0.5",
+  "dist": {
+    "url": "https://github.com/clickstorm/cs_youtube_data.git",
+    "type": "git"
+  },
+  "replace": {
+    "cs_youtube_data": "*"
+  },
+  "require": {
+    "typo3/cms": ">=6.2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clickstorm\\CsYoutubeData\\": "Classes/"
+    }
+  }
+}
