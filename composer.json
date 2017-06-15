@@ -11,7 +11,7 @@
     "clickstorm",
     "YouTube"
   ],
-  "version": "1.0.6",
+  "version": "2.0.0",
   "dist": {
     "url": "https://github.com/clickstorm/cs_youtube_data.git",
     "type": "git"
@@ -20,7 +20,7 @@
     "cs_youtube_data": "*"
   },
   "require": {
-    "typo3/cms": ">=6.2.6"
+    "typo3/cms": ">=8.7.0"
   },
   "autoload": {
     "psr-4": {

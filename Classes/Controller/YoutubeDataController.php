@@ -92,7 +92,6 @@ class YoutubeDataController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
         // this line converts the json string which is returned into a php object
         $data = json_decode($data);
         if(!empty($data->error)){
-
             //Errorcode API
             $errorCode = $data->error->code;
             $errorCodeLanguage = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_error_code', 'cs_youtube_data');
@@ -106,11 +105,10 @@ class YoutubeDataController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
             $errorReasonLanguage = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_error_reason', 'cs_youtube_data');
 
             //Error Link
-            $errorLinkLanguage = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_error_link', 'cs_youtube_data');
-            $errorLink = '<a href="https://developers.google.com/youtube/v3/docs/errors" target="_blank">'.$errorLinkLanguage.'</a>';
+            $errorLink = 'https://developers.google.com/youtube/v3/docs/errors';
 
             $messageTitle = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_error', 'cs_youtube_data');
-            $messageBody = $errorCodeLanguage.$errorCode.'<br />'.$errorMessageLanguage.$errorMessage.'<br />'.$errorReasonLanguage.$reason.'<br />'.$errorLink;
+            $messageBody = $errorCodeLanguage.$errorCode.' | '.$errorMessageLanguage.$errorMessage.' | '.$errorReasonLanguage.$reason.' | '.$errorLink;
 
             $this->addFlashMessage(
                 $messageBody,
