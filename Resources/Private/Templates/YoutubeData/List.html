@@ -4,7 +4,7 @@
      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
 
 <f:section name="Main">
-    <f:flashMessages renderMode="div" />
+    <f:flashMessages />
     <f:if condition="{videos}">
         <f:for each="{videos}" as="video" iteration="i">
             <f:if condition="{i.isFirst}">
