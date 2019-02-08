@@ -9,11 +9,6 @@ if (!defined('TYPO3_MODE')) {
 	'Youtube Data V3 Plugin'
 );
 
-// add wizard icon to the "add new record" in backend
-if (TYPO3_MODE == "BE") {
-    $TBE_MODULES_EXT["xMOD_db_new_content_el"]["addElClasses"]["CsYoutubeDataWizicon"] =
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Classes/Helper/CsYoutubeDataWizicon.php';
-}
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Youtube Data');
 

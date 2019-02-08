@@ -14,9 +14,7 @@
   "replace": {
     "cs_youtube_data": "*"
   },
-  "require": {
-    "typo3/cms": ">=6.2.6"
-  },
+  "version": "2.0.1",
   "autoload": {
     "psr-4": {
       "Clickstorm\\CsYoutubeData\\": "Classes/"
