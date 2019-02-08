@@ -12,10 +12,6 @@
     "YouTube"
   ],
   "version": "2.0.0",
-  "dist": {
-    "url": "https://github.com/clickstorm/cs_youtube_data.git",
-    "type": "git"
-  },
   "replace": {
     "cs_youtube_data": "*"
   },
