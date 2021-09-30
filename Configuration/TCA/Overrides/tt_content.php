@@ -10,8 +10,8 @@ defined('TYPO3_MODE') or die();
 
 //FlexForm add
 $pluginSignature = str_replace('_', '', 'cs_youtube_data') . '_pi1';
-$TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
-$TCA['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature]='code,layout,select_key,pages,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature]='code,layout,select_key,pages,recursive';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $pluginSignature,
     'FILE:EXT:cs_youtube_data/Configuration/FlexForms/flexform_pi1.xml'
