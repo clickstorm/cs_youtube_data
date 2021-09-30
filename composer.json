@@ -11,6 +11,9 @@
     "clickstorm",
     "YouTube"
   ],
+  "replace": {
+    "typo3-ter/cs_youtube_data": "self.version"
+  },
   "require": {
     "typo3/cms-core": "^10.4"
   },
