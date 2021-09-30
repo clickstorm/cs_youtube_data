@@ -11,12 +11,13 @@
     "clickstorm",
     "YouTube"
   ],
-  "version": "2.0.0",
-  "replace": {
-    "cs_youtube_data": "*"
-  },
   "require": {
-    "typo3/cms": ">=8.7.0"
+    "typo3/cms": "^10.4"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "cs_youtube_data"
+    }
   },
   "autoload": {
     "psr-4": {
