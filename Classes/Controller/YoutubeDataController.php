@@ -25,12 +25,18 @@ namespace Clickstorm\CsYoutubeData\Controller;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
-use TYPO3\CMS\Core\Utility\ArrayUtility;
+
+use TYPO3\CMS\Core\Messaging\AbstractMessage;
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 /**
  * YoutubeDataController
  */
-class YoutubeDataController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
+class YoutubeDataController extends ActionController
+{
+
+    private $extConf;
 
     /**
      * action initialize
@@ -38,7 +44,7 @@ class YoutubeDataController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
      * @return void
      */
     public function initializeAction() {
-        $this->extConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['cs_youtube_data']);
+        $this->extConf = $GLOBALS["TYPO3_CONF_VARS"]["EXTENSIONS"]["cs_youtube_data"];
     }
 
     /**
@@ -94,26 +100,26 @@ class YoutubeDataController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
         if(!empty($data->error)){
             //Errorcode API
             $errorCode = $data->error->code;
-            $errorCodeLanguage = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_error_code', 'cs_youtube_data');
+            $errorCodeLanguage = LocalizationUtility::translate('tx_csyoutubedata_error_code', 'cs_youtube_data');
 
             //Errormessage API
             $errorMessage = $data->error->message;
-            $errorMessageLanguage = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_error_message', 'cs_youtube_data');
+            $errorMessageLanguage = LocalizationUtility::translate('tx_csyoutubedata_error_message', 'cs_youtube_data');
 
             //Reason API
             $reason = $data->error->errors[0]->reason;
-            $errorReasonLanguage = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_error_reason', 'cs_youtube_data');
+            $errorReasonLanguage = LocalizationUtility::translate('tx_csyoutubedata_error_reason', 'cs_youtube_data');
 
             //Error Link
             $errorLink = 'https://developers.google.com/youtube/v3/docs/errors';
 
-            $messageTitle = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_error', 'cs_youtube_data');
+            $messageTitle = LocalizationUtility::translate('tx_csyoutubedata_error', 'cs_youtube_data');
             $messageBody = $errorCodeLanguage.$errorCode.' | '.$errorMessageLanguage.$errorMessage.' | '.$errorReasonLanguage.$reason.' | '.$errorLink;
 
             $this->addFlashMessage(
                 $messageBody,
                 $messageTitle,
-                \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR
+                AbstractMessage::ERROR
             );
         }elseif(!empty($data->items)){
             $items = array();
@@ -137,16 +143,13 @@ class YoutubeDataController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
                 $this->view->assign('videos', $videos['items']);
             }
         }else{
-            $messageTitle = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_channel_false_check', 'cs_youtube_data');
-            $messageBody = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_csyoutubedata_channel_false', 'cs_youtube_data').' - '.$channelId.'!';
+            $messageTitle = LocalizationUtility::translate('tx_csyoutubedata_channel_false_check', 'cs_youtube_data');
+            $messageBody = LocalizationUtility::translate('tx_csyoutubedata_channel_false', 'cs_youtube_data').' - '.$channelId.'!';
             $this->addFlashMessage(
                 $messageBody,
                 $messageTitle,
-                \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING
+                AbstractMessage::WARNING
             );
         }
     }
-
-
-
 }
