@@ -10,7 +10,7 @@
  * "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
 	'title' => '[clickstorm] Youtube Data V3',
 	'description' => 'Displays a youtube channel on your page',
 	'category' => 'plugin',
@@ -18,18 +18,11 @@ $EM_CONF[$_EXTKEY] = array(
 	'author_email' => 'kirilow@clickstorm.de',
     'author_company' => 'clickstorm GmbH',
 	'state' => 'stable',
-	'internal' => '',
-	'uploadfolder' => '0',
-	'createDirs' => '',
-	'clearCacheOnLoad' => 0,
-	'version' => '2.0.1',
-	'constraints' => array(
-		'depends' => array(
-			'typo3' => '8.7.0 - 8.7.99',
-		),
-		'conflicts' => array(
-		),
-		'suggests' => array(
-		),
-	),
-);
+	'clearCacheOnLoad' => 1,
+	'version' => '3.0.0',
+	'constraints' => [
+		'depends' => [
+			'typo3' => '10.4.0-10.4.99',
+		]
+	],
+];

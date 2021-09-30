@@ -3,18 +3,15 @@ if (!defined('TYPO3_MODE')) {
 	die('Access denied.');
 }
 
+$_EXTKEY = 'cs_youtube_data';
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
 	'Clickstorm.' . $_EXTKEY,
 	'Pi1',
-	array(
-		'YoutubeData' => 'list',
-		
-	),
+	[
+		\Clickstorm\CsYoutubeData\Controller\YoutubeDataController::class => 'list',
+    ],
 	// non-cacheable actions
-	array(
-		'YoutubeData' => '',
-		
-	)
+    []
 );
 
 if (TYPO3_MODE === 'BE'){
@@ -44,5 +41,4 @@ if (TYPO3_MODE === 'BE'){
             }
        }'
     );
-
 }
