@@ -1,12 +1,20 @@
 <?php
 namespace Clickstorm\CsYoutubeData\ViewHelpers;
+
+use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
+
 /**
  * Created by PhpStorm.
  * User: akirilow
  * Date: 02.04.2015
  * Time: 09:13
  */
-class ConvertDurationViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
+class ConvertDurationViewHelper extends AbstractViewHelper {
+
+    public function initializeArguments()
+    {
+        $this->registerArgument('duration', 'int', 'The duration with which Youtube Video gets converted', true);
+    }
 
     /**
      *Converts the duration of Youtube Video
@@ -15,7 +23,8 @@ class ConvertDurationViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\Abstrac
      * @return string string
      * @author Andreas Kirilow <kirilow@clickstorm.de>
      */
-    public function render($duration) {
+    public function render() {
+        $duration = $this->arguments['duration'];
         preg_match('#PT(.*?)H(.*?)M(.*?)S#si',$duration,$out);
         if(empty($out[1])){
             preg_match('#PT(.*?)M(.*?)S#si',$duration,$out);
