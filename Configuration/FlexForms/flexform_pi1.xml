@@ -28,6 +28,7 @@
                             </label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <items>
                                     <numIndex index="0" type="array">
                                         <numIndex index="0">LLL:EXT:cs_youtube_data/Resources/Private/Language/locallang.xlf:tx_csyoutubedata_flexform_settings.order.date</numIndex>
